@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="form.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #006633;">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="50" height="30" class="d-inline-block align-top" alt="">
+            Department of Computer Science
+        </a>
+    </nav>
+    <div class="wrapper">
+        
+        <div class="survey_form">
+            <h2>Survey Form</h2>
+            <form autocomplete="on" >
+                <div class="form-group">
+                    <label for="username">Username<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="username" name="username" required
+                        placeholder="e.g., JohnDoe123">
+                    <label for="street">Street Address<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="street" name="street" required placeholder="123 Main St">
+                    <label for="city">City<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="city" name="city" required placeholder="e.g., New York">
+        
+                    <label for="state">State<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="state" name="state" required placeholder="e.g., NY">
+        
+                    <label for="zip">ZIP Code<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="zip" name="zip" required placeholder="e.g., 10001">
+        
+                    <label for="telephone">Telephone Number<span class="required">*</span></label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone" required
+                        placeholder="e.g., (555) 555-5555">
+        
+                    <label for="email">E-mail<span class="required">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required
+                        placeholder="e.g., john.doe@example.com">
+        
+                    <label for="url">URL<span class="required">*</span></label>
+                    <input type="url" class="form-control" id="url" name="url" required
+                        placeholder="e.g., http://www.example.com">
+        
+                    <label for="surveyDate">Date of Survey<span class="required">*</span></label>
+                    <input type="date" class="form-control" id="surveyDate" name="surveyDate" required placeholder="YYYY-MM-DD">
+                </div>
+        
+        
+        
+        
+        
+                <label>What did you like most about the campus?<span class="required">*</span></label>
+                <div class="list-group">
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Students
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Location
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Campus
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Atmosphere
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Dorm Rooms
+                    </label>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Sports
+                    </label>
+                </div>
+        
+                <label>How did you become interested in the university?<span class="required">*</span></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="interest" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Friends
+                    </label>
+                    <input class="form-check-input" type="radio" name="interest" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Television
+                    </label>
+                    <input class="form-check-input" type="radio" name="interest" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Internet
+                    </label>
+                    <input class="form-check-input" type="radio" name="interest" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Other
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea class="form-control" id="comments" name="comments" rows="4"
+                        placeholder="Enter your comments here"></textarea>
+                </div>
+        
+        
+                <div class="form-group">
+                    <label for="graduationMonth">High School Graduation Month</label>
+                    <input class="form-control" list="months" id="graduationMonth" name="graduationMonth"
+                        placeholder="Select month">
+                    <datalist id="months">
+                        <option value="January">
+                        <option value="February">
+                        <option value="March">
+                        <option value="April">
+                        <option value="May">
+                        <option value="June">
+                        <option value="July">
+                        <option value="August">
+                        <option value="September">
+                        <option value="October">
+                        <option value="November">
+                        <option value="December">
+                    </datalist>
+                </div>
+        
+                <div class="form-group">
+                    <label for="graduationYear">High School Graduation Year</label>
+                    <input class="form-control" type="text" id="graduationYear" name="graduationYear" placeholder="e.g., 2022">
+                </div>
+        
+                <div class="form-group">
+                    <label for="recommendation">Likelihood of Recommending<span class="required">*</span></label>
+                    <select class="form-control" id="recommendation" name="recommendation">
+                        <option value="veryLikely">Very Likely</option>
+                        <option value="likely">Likely</option>
+                        <option value="unlikely">Unlikely</option>
+                    </select>
+                </div>
+        
+                <button type="submit" class="btn btn-success btn-lg">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        Designed By Pranavi 
+      </footer>
+    <script>
+        document.getElementById("username").focus();
+    </script>
+
+</body>
+
+</html>

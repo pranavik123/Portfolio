@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    /* color: #333; */
+}
+.container_head_img {
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    padding-bottom:30px;
+        /* eight="600" width="1515" */
+  }
+  .top-left {
+    position: absolute;
+  top: 45%;
+  left: 29%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 90px;
+  border: 3px solid #006633;
+  padding: 10px;
+    color: black;
+  font-weight: 600;
+  }
+  .top-right{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    font-size: 40px;
+    background-color:#FFCC33 ;
+  border: 5px solid #006633;
+  padding: 10px;
+
+  }
+  .navbar-brand{
+    color:#FFCC33;
+  }
+  .navbar-brand:hover{
+    color:#FFCC33;
+  }
+h1{
+    color:#006633;
+}
+.description{
+    padding:30px;
+    width:700px;
+}
+hr {
+    border: 0;
+    height: 4px;
+    background-color: #ffbf00;
+}
+.courses-list{
+    padding:30px;
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+}
+.req-courses{
+    padding:30px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.custom-table th {
+    background-color: #006633; 
+    color: #FFCC33; 
+  }
+.footer{
+    background-color: #006633; 
+    color: #FFCC33; 
+    padding:30px;
+}
+a{
+    text-decoration: none;
+}
+.custom-btn{
+    background-color: #006633;
+    color:#FFCC33;
+    /* padding-right: 0px; */
+}
+.custom-btn:hover{
+    background-color: #006633;
+    color:#FFCC33;
+    /* padding-right: 0px; */
+}
+.survey-button{
+    position:relative;
+    /* padding-right: 90px; */
+    left:83%;
+    bottom:50%;
+
+}
